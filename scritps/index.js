@@ -2,7 +2,7 @@ import Home from './home.js';
 import Menu from './menu.js';
 import Navbar from './navbar.js';
 import Contact from './contact.js';
-
+import Appetizer from './appetizer.js';
 const Index = () => {
   function italicsBody() {
     document.body.style.fontFamily = "Cambria, Cochin, Georgia, Times, 'Times New Roman', serif";
@@ -14,6 +14,8 @@ const Index = () => {
   content.appendChild(navbar);
   const home = Home();
   content.appendChild(home);
+  const appetizer = Appetizer();
+ 
   
   // NAVBAR CLICKING
   
@@ -33,6 +35,11 @@ const Index = () => {
   const link3 = document.getElementById('contact');
   link3.addEventListener('click', () => {
     content.replaceChild(contact, content.childNodes[1]);
+  });  
+  
+  const link4 = document.getElementById('appetizer');
+  link4.addEventListener('click', () => {
+    content.replaceChild(appetizer, content.childNodes[1]);
   });  
 };
 

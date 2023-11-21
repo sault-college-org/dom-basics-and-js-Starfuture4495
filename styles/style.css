@@ -39,6 +39,18 @@ body {
   color: rgb(211, 170, 170);
 }
 
+#appetizer1 {
+  background-image: url('/imgs/nacho.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  padding-top: 120px;
+  color: red;
+  text-shadow: black 2px 2px;
+  font-size: 50px;
+}
+
 #menu1 {
   background-image: url('/imgs/chickenimg.jpg');
   background-size: cover;
